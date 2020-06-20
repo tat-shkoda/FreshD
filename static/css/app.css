@@ -1,0 +1,141 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 117px;
+}
+
+/**/
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/**/
+
+header {
+    background: #F24151;
+    height: 70px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+nav {
+    width: 100%;
+}
+.nav {
+    list-style-type: none;
+    justify-content: flex-start;
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+.nav li {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.nav>li>a {
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+}
+.right-nav {
+    list-style-type: none;
+    justify-content: flex-start;
+}
+.right-nav li {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.user {
+    height: 40px;
+}
+.search {
+    margin-left: 20px;
+    height: 24px;
+}
+
+
+/* Main Page*/
+.main-page .bg-img-1 {
+    margin-left: 20px;
+    width: 626.99px;
+    height: 530.99px;
+    left: 35px;
+    margin-top: 35px;
+}
+.main-page .bg-img-2 {
+    position: absolute;
+    width: 400.75px;
+    /*height: 180.37px; */
+    left: 250px;
+    top: 240.21px;
+}
+.main-page .content {
+    position: absolute;
+    left: 131px;
+    top: 200px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    /* identical to box height */
+
+    /*display: flex;*/
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.main-page h1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.main-page h2 {
+    max-width: 283px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 117px;
+    line-height: 117px;
+    width: 100%;
+    background: #F8F5F5;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.05);
+}
+.footer-right {
+    float: right;
+}

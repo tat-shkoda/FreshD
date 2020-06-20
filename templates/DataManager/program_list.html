@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        {% if programs %}
+            {% for program in programs %}
+                <div>{{ program.id }} - {{ program.name }} - {{ program.description }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+{% endblock %}
