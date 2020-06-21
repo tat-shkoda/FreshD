@@ -4,27 +4,64 @@ from django.http import HttpResponse
 
 # Index
 def index(request):
-    # data = {"header": "Hello Django", "message": "Welcome to Python"}
-    # return render(request, "index.html", context=data)
     return render(request, 'index.html', {
             'title': 'Главная',
         })
 
-def programList(request):
-    programs = [
+def programs(request):
+    data = [
         {
-            'id': 1,
-            'name': 'name1',
-            'description': 'description1',
-        },
-        {
-            'id': 2,
-            'name': 'Name2',
-            'description': 'description2',
+            'type': 'БАКАЛАВРИАТ',
+            'description': 'ОЧНАЯ ФОРМА ОБУЧЕНИЯ - 4 ГОДА',
+            'programs': [
+                {
+                    'id': 1,
+                    'code': '01.03.04',
+                    'name': 'Прикладная математика',
+                    'specializations': [
+                        'Применение математических методов в решении инженерных и экономических задач',
+                    ],
+                },
+                {
+                    'id': 2,
+                    'code': '02.03.03',
+                    'name': 'Математическое обеспечение и администрирование информационных систем',
+                    'specializations': [
+                        'Математическое обеспечение и администрирование информационных систем',
+                    ],
+                },
+                {
+                    'id': 3,
+                    'code': '03.03.01',
+                    'name': 'Прикладные математика и физика',
+                    'specializations': [
+                        'Моделирование процессов и производств нефтегазового комплекса',
+                    ],
+                },
+                {
+                    'id': 4,
+                    'code': '08.03.01',
+                    'name': 'Строительство',
+                    'specializations': [
+                        'Водоснабжение и водоотведение',
+                        'Теплогазоснабжение и вентиляция',
+                        'Проектирование зданий',
+                        'Производство строительных материалов, изделий и конструкций Экспертиза и управление недвижимостью',
+                        'Промышленное и гражданское строительство',
+                        'Автомобильные дороги',
+                        'Автодорожные мосты и тоннели',
+                        'Строительное материаловедение и контроль качества в промышленном и гражданском строи',
+                    ],
+                },
+            ]
         },
     ]
 
     return render(request, 'DataManager/program_list.html', {
-        'title': 'Список программ',
-        'programs': programs,
+        'title': 'Направления подготовки',
+        'data': data,
     })
+
+def show(id):
+    print(id)
+    pass

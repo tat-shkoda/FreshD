@@ -1,11 +1,28 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div class="container">
-        {% if programs %}
-            {% for program in programs %}
-                <div>{{ program.id }} - {{ program.name }} - {{ program.description }}</div>
-            {% endfor %}
-        {% endif %}
+    {% load static %}
+    <div class="programs">
+        <div class="container">
+            <h1>{{ title }}</h1>
+            {% if data %}
+                {% for item in data %}
+                    <p class="programs__info">{{ item.type }}</p>
+                    <p class="programs__info">{{ item.description }}</p>
+
+                    {% for program in item.programs %}
+                        <ul class="program-info">
+                            <li><a class="program-info__name" href="/programs/7">{{ program.code }} - {{ program.name }}</a></li>
+                            {% for specialization in program.specializations %}
+                                <li>{{ specialization }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endfor %}
+                {% endfor %}
+            {% endif %}
+        </div>
+        <div class="gradient">
+            <img src="{% static 'img/programs/Vector.svg' %}" alt=""/>
+        </div>
     </div>
 {% endblock %}

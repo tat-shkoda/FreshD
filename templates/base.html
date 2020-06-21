@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     {% load static %}
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="{% static 'css/app.css' %}">
 </head>
 
@@ -14,29 +16,29 @@
         <div class="container">
             <div class="header">
                 <a href="" class="logo">
-                    <img src="{% static 'img/logo.svg' %}" alt="Logo"/>
+                    <img src="{% static 'img/main-page/logo.svg' %}" alt="Logo"/>
                 </a>
 
                 <nav>
                     <ul class="nav">
-                        <li><a href="">Программы</a></li>
-                        <li><a href="">Документы</a></li>
-                        <li><a href="">Компетенции</a></li>
-                        <li><a href="">Дисциплины</a></li>
-                        <li><a href="">Преподаватели</a></li>
-                        <li><a href="">Студенты</a></li>
+                        <li><a href="/programs">Программы</a></li>
+                        <li><a href="#">Документы</a></li>
+                        <li><a href="#">Компетенции</a></li>
+                        <li><a href="#">Дисциплины</a></li>
+                        <li><a href="#">Преподаватели</a></li>
+                        <li><a href="#">Студенты</a></li>
                     </ul>
                 </nav>
 
                 <ul class="right-nav">
                     <li class="user">
                         <a href="">
-                            <img src="{% static 'img/user.svg' %}" alt="User"/>
+                            <img src="{% static 'img/main-page/user.svg' %}" alt="User"/>
                         </a>
                     </li>
                     <li class="search">
                         <a href="">
-                            <img src="{% static 'img/search.svg' %}" alt="User"/>
+                            <img src="{% static 'img/main-page/search.svg' %}" alt="User"/>
                         </a>
                     </li>
                 </ul>

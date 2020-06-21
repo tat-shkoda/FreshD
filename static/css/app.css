@@ -79,6 +79,9 @@ nav {
 
 
 /* Main Page*/
+.main-page {
+    /*max-width: 1440px;*/
+}
 .main-page .bg-img-1 {
     margin-left: 20px;
     width: 626.99px;
@@ -125,6 +128,152 @@ nav {
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.people {
+    position: absolute;
+    left: 816px;
+    top: 145px;
+    text-align: center;
+}
+.people-1 {
+    width: 200px;
+    /*position: absolute;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*left: 836px;*/
+    /*top: 145px;*/
+}
+.people-2 {
+    width: 200px;
+    position: absolute;
+    /*width: 182px;*/
+    /*height: 141px;*/
+    left: 300px;
+    top: 0px;
+}
+.people-3 {
+    width: 200px;
+    position: absolute;
+    /*width: 113px;*/
+    /*height: 133px;*/
+    left: 150px;
+    top: 200px;
+}
+.people-content .title {
+    margin-top: 15px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    text-align: center;
+}
+.people-content .text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    align-items: center;
+    text-align: center;
+}
+
+.ellipse {
+    width: 100px;
+    height: 100px;
+}
+
+.elite-programs {
+    position: absolute;
+    left: 676px;
+    top: 475px;
+}
+.elite-programs-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.elite-programs-title:after {
+    content: "";
+    background: url('../../static/img/main-page/prestige.svg') no-repeat right center;
+    height: 42px;
+    width: 27px;
+    margin-left: 15px;
+}
+.elite-programs>ul {
+    padding-left: 0;
+    list-style: none;
+}
+.elite-programs>ul>li {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    /* or 129% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+}
+
+/* Programs */
+.programs {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /*display: flex;*/
+    align-items: center;
+}
+.programs h1 {
+    margin: 50px 0;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+}
+.programs__info {
+    font-size: 18px;
+    font-weight: 500;
+}
+.program-info {
+    margin: 30px 0;
+    padding-left: 0;
+    list-style: none;
+    line-height: 28px;
+}
+.program-info__name {
+    text-decoration: none;
+    color: #000;
+}
+.program-info__name:hover {
+    color: #003CE6;
+}
+.program-info:last-child {
+    padding-bottom: 50px;
+}
+.gradient {
+    position: absolute;
+    width: 475px;
+    height: 172px;
+    right: 0;
+    bottom: 90px;
+}
+
+
 
 
 footer {
@@ -134,7 +283,7 @@ footer {
     line-height: 117px;
     width: 100%;
     background: #F8F5F5;
-    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.05);
+    /*box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.05);*/
 }
 .footer-right {
     float: right;
